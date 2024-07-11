@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+
+<img class="img" src="./img/1.jpg" alt="first">
+
+
+<script>
+    const imgEl = document.querySelector('.img');
+
+    const newSrc = ['./img/2.jpg', './img/3.jpg', './img/4.jpg', './img/5.jpg', './img/6.jpg', './img/7.jpg', './img/8.jpg', './img/9.jpg', './img/10.jpg'];
+
+    setInterval(() => {
+        const randomIndex = Math.floor(Math.random() * newSrc.length);
+        imgEl.setAttribute('src', newSrc[randomIndex]);
+    }, 2000); 
+</script>
+</body>
+</html>
+</script>
+
+</body>
+</html>
